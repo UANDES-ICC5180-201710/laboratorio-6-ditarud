@@ -1,5 +1,9 @@
 <strong>
-  <%= link_to course, course %>:
+  <%= link_to course, course %>
 </strong>
+  <li class = "navbar-item navbar-toggleable-md navbar-light bg-faded">
 <%= link_to 'Assignments', course_assignments_path(course_id: course.id) %>
+
+
 <%= link_to 'Students', students_course_path(id: course.id) %>
+</li>
